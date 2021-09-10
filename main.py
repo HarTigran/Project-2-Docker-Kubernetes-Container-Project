@@ -40,7 +40,7 @@ async def add(longitude: str, latitude: str):
     dist_on_ground = round(distance.distance(coords_1, coords_2).km,2)
     # Returns distance from ISS."""
     print("The distance between provided point and Current position of the ISS is about:")
-    return {"ISS_dist_to_point_is":str(dist_on_ground), 'unit':'km'}
+    return {"ISS_dist_to_point_iss":str(dist_on_ground), 'unit':'km'}
 
 # run the app.
 if __name__ == "__main__":
